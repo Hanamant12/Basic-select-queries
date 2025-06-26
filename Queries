@@ -1,0 +1,35 @@
+id (INTEGER)
+first_name (TEXT)
+last_name (TEXT)
+department (TEXT)
+salary (INTEGER)
+hire_date (DATE)
+
+SELECT * FROM employees;
+
+SELECT first_name, salary FROM employees;
+
+SELECT * FROM employees
+
+WHERE department = 'HR';
+
+SELECT * FROM employees
+WHERE department = 'HR' AND salary > 50000;
+
+SELECT * FROM employees
+WHERE department = 'HR' OR salary > 50000;
+
+SELECT * FROM employees
+WHERE first_name LIKE 'J%';
+
+SELECT * FROM employees
+WHERE salary BETWEEN 40000 AND 60000;
+
+SELECT * FROM employees
+ORDER BY salary DESC;
+
+SELECT * FROM employees
+LIMIT 5;
+
+
+
